@@ -20,10 +20,10 @@
                     <li><a href="/nb535/hobbies/speedcubing/#intro">Introduction</a></li>
                     <li><a href="/nb535/hobbies/speedcubing/#how_solve">How do I solve the Cube?</a></li>
                     <ul>
-                        <li><a href="/nb535/hobbies/speedcubing/#cross">Cross</a></li>
-                        <li><a href="/nb535/hobbies/speedcubing/#f2l">F2L</a></li>
-                        <li><a href="/nb535/hobbies/speedcubing/#oll">OLL</a></li>
-                        <li><a href="/nb535/hobbies/speedcubing/#pll">PLL</a></li>
+                        <li><a href="#cross">Cross</a></li>
+                        <li><a href="#f2l">F2L</a></li>
+                        <li><a href="#oll">OLL</a></li>
+                        <li><a href="#pll">PLL</a></li>
                     </ul>
                 </ul>
 

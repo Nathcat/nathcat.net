@@ -1,6 +1,6 @@
 <div class="container-fluid bg-secondary footer">
     <div class="row align-items-center justify-content-center" style="padding-left: 25vw; padding-right: 25vw; padding-top: 50px;">
-        <h3 style="border-bottom: 0; font-family: 'Courier New';">Herman Hermanus</h3>
+        <h3 style="border-bottom: 0; font-family: 'Courier New';">Nathan Baines</h3>
     </div>
 
     <div class="row" style="padding-left: 25vw; padding-right: 25vw;">

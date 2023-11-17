@@ -29,7 +29,7 @@
                             $content = str_replace("\n", "<br>", $content);
                             fclose($desc_file);
 
-                            echo "<a href='/nb535/portfolio/$d'><h2>$d</h2><p>$content</p></a>";
+                            echo "<a href='/portfolio/$d'><h2>$d</h2><p>$content</p></a>";
                         }
                         ?>
                     </div>

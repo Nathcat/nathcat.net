@@ -50,10 +50,10 @@ function B(t, P) {
     }
 }
 
-function bezier_curve(points, steps, canvas) {
+function bezier_curve(points, steps, canvas, colour) {
     const ctx = canvas.getContext("2d");
     ctx.lineWidth = 5;
-    ctx.strokeStyle = "black";
+    ctx.strokeStyle = colour;
     ctx.beginPath();
     ctx.moveTo(points[0].x, points[0].y);
 

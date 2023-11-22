@@ -35,7 +35,7 @@
                         the time, effort, and headaches some of them may take.
                     </p>
 
-                    <div class="bezier-curve-spider-new-points-button" onclick="points = new_points();">Generate new points</div>
+                    <div class="button" onclick="points = new_points();">Generate new points</div>
                 </div>
             </div>
         </div>

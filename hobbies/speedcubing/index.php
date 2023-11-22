@@ -72,7 +72,8 @@
                         <li><a href="https://www.speedsolving.com/wiki/index.php/OLL">Orient Last Layer (OLL)</a></li>
                         <li><a href="https://www.speedsolving.com/wiki/index.php/PLL">Permute Last Layer (PLL)</a></li>
                     </ol>
-
+                </p>
+                <p>
                     Lets have a look at what is required in each of these stages.
                 </p>
 

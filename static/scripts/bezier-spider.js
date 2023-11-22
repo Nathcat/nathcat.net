@@ -9,7 +9,7 @@ function euler_distance(a, b) {
 
 function draw_points(points) {
     for (let i = 0; i < points.length; i++) {
-        canvas.getContext("2d").fillStyle = "black";
+        canvas.getContext("2d").fillStyle = getComputedStyle(document.documentElement).getPropertyValue("--theme-text");
         draw_circle_filled(canvas.getContext("2d"), 12.5, points[i], 36);
     }
 }
@@ -81,6 +81,6 @@ window.addEventListener("mousemove", (event) => {
 
         temp_points.splice(largest_i, 1);
 
-        bezier_curve([spider.add(new Point($(".spider-centre").width() / 2, $(".spider-centre").height() / 2)), c_points[p], closest_points[p]], 128, canvas);
+        bezier_curve([spider.add(new Point($(".spider-centre").width() / 2, $(".spider-centre").height() / 2)), c_points[p], closest_points[p]], 128, canvas, getComputedStyle(document.documentElement).getPropertyValue("--theme-text"));
     }
 });

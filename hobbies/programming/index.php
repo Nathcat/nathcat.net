@@ -180,6 +180,8 @@
                         <li>Use Jetpack Compose UI framework rather than native views</li>
                     </ul>
 
+                </p>
+                <p>
                     The second point requires the use of Kotlin, which is effectively a superset of Java, meaning that the two languages are, to some extent, interchangeable.
                 </p>
 

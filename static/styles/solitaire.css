@@ -61,5 +61,5 @@
     position: absolute;
     width: 10vw;
     height: 14vw;
-    border: 1px solid black;
+    border: 1px solid var(--theme-text);
 }

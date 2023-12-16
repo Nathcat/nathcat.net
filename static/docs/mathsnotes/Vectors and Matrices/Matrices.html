@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Matrices (Lecture 15)</title>
+        <title>Matrices</title>
 
         <script type="text/javascript"
             src="https://www.maths.nottingham.ac.uk/plp/pmadw/LaTeXMathML.js">
@@ -10,6 +10,11 @@
 
     <body>
         <h1>Matrices</h1>
+        <p>
+            Matrices are often used to represent linear transformations on vectors, although they have many other applications
+            as well, for example solving certain systems of equations.
+        </p>
+
         <h2>Matrix-Matrix multiplication</h2>
         <p>
             Given two matrices 
@@ -195,6 +200,62 @@
 
         <p>
             The determinant only exists on square matrices.
+        </p>
+
+        <p>
+            To describe this method (the Laplace expeansion), we must first look at what a minor is.
+        </p>
+        <p>
+            A minor is the determinant of a sub-matrix of a matrix. This sub-matrix is obtained by removing one or more
+            rows from the original matrix. So lets say that $M_{i,j}$ is the sub-matrix obtained by removing row $i$ and column
+            $j$ from the matrix $M\in\mathcal{M}(n,n)$.
+        </p>
+        <p>
+            For example, if
+            $\displaystyle{
+                M=\left(\begin{array}{ccc}
+                a&b&c\\
+                d&e&f\\
+                g&h&i
+                \end{array}\right)
+            }$, then
+            $m_{1,1}=\left(\begin{array}{cc}
+            e&f\\
+            h&i
+            \end{array}\right)$, and
+            $m_{1,2}=\left(\begin{array}{cc}
+            d&f\\
+            g&i
+            \end{array}\right)$, and
+            $m_{1,3}=\left(\begin{array}{cc}
+            d&e\\
+            g&h
+            \end{array}\right)$
+        </p>
+        <p>
+            Lets rewrite the 3x3 determinant in generalised way, using this information:
+        </p>
+        <p>
+            $\displaystyle{\begin{array}{l}
+                det\left(M\right)=a\left(ei-fh\right)-b\left(di-fg\right)+c\left(dh-eg\right)
+                \\\to
+                det\left(M\right)=A_{1,1}m_{1,1}-A_{1,2}m_{1,2}+A_{1,3}m_{1,3}
+                \\\to
+                det\left(M\right)=\left(-1\right)^{1+1}A_{1,1}m_{1,1}+\left(-1\right)^{1+2}A_{1,2}m_{1,2}+\left(-1\right)^{1+3}A_{1,3}m_{1,3}
+                \\\to
+                det\left(M\right)=\sum_{j=1}^n\left(-1\right)^{j+1}M_{1,j}m_{1,j}
+            \end{array}}$
+        </p>
+        <p>
+            As you can see, with matrices larger than 3x3 this becomes recursive, for example in a 4x4 matrix, the $m_{i,j}$
+            is a 3x3 matrix, so you must then find the determinant of this 3x3 matrix to continue.
+        </p>
+        <p>
+            There are of course other methods of finding the determinant, but personally I find that this one is the easiest to
+            understand because it follows a very clear pattern.
+        </p>
+        <p>
+            Also note that the determinant of a matrix may be denoted by $|M|.$
         </p>
 
         <h2>Final notes</h2>

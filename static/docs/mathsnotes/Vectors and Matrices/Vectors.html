@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Vectors (Lecture 13)</title>
+        <title>Vectors</title>
 
         <script type="text/javascript"
             src="https://www.maths.nottingham.ac.uk/plp/pmadw/LaTeXMathML.js">
@@ -11,8 +11,34 @@
     <body>
         <h1>Vectors</h1>
         <p>
-            I would cover this in more detail but I'm already very familiar
-            with vectors so.
+            Vectors are a way of representing a position in an n-dimensional space, most commonly 2 or 3 dimensions.
+        </p>
+        <p>
+            They consist of multiple components, the number of components is equal to the number of dimensions the vector exists
+            in, and each component describes a displacement along an axis for that dimension. Hence by combining these
+            displacements, we have a final position.
+        </p>
+        <p>
+            There are generally two ways in which Vectors are represented, as rows, and as columns:
+        </p>
+        <p>
+            $\displaystyle{
+                \vec{a}=\left(
+                \begin{array}{cccc}
+                \\a_1&a_2&\cdots &a_n
+                \end{array}
+                \right)
+            }$ and $\displaystyle{
+                \vec{b}=\left(
+                \begin{array}{c}
+                b_1\\b_2\\\vdots\\b_n
+                \end{array}    
+                \right)
+            }$
+        </p>
+        <p>
+            It is common to think about vectors as a type of matrix, as they are commonly used in operations with matrices,
+            but we may interpret them differently to a matrix.
         </p>
 
         <h2>Vector Transposition</h2>
@@ -28,7 +54,7 @@
             \end{array}\right) \in \mathbb{R}^n
             \to
             \vec{x}^T=\left(\begin{array}{cccc}
-            x_1&x_2&\cdots &x_n
+            \\x_1&x_2&\cdots &x_n
             \end{array}\right)
             $
         </p>
@@ -40,7 +66,7 @@
             $\displaystyle{
             \left(
             \begin{array}{cccc}
-            p_1&p_2&\cdots &p_n
+            \\p_1&p_2&\cdots &p_n
             \end{array}    
             \right)
 
@@ -63,7 +89,7 @@
             "length" of a vector.
         </p>
         <p>
-            The dot product:
+            The dot / scalar product:
             $\displaystyle{
             \vec{x}\cdot\vec{y}=\vec{x}^T\vec{y}=\sum_{i=1}^nx_iy_i
             }$

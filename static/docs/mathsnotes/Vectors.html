@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vectors (Lecture 13)</title>
+
+        <script type="text/javascript"
+            src="https://www.maths.nottingham.ac.uk/plp/pmadw/LaTeXMathML.js">
+        </script>
+    </head>
+
+    <body>
+        <h1>Vectors</h1>
+        <p>
+            I would cover this in more detail but I'm already very familiar
+            with vectors so.
+        </p>
+
+        <h2>Vector Transposition</h2>
+        <p>
+            Vectors may be transposed to transform them between row and column
+            representations.
+        </p>
+        <p>
+            $
+            \vec{x}=
+            \left(\begin{array}{c}
+            x_1\\ x_2\\ \vdots\\ x_n
+            \end{array}\right) \in \mathbb{R}^n
+            \to
+            \vec{x}^T=\left(\begin{array}{cccc}
+            x_1&x_2&\cdots &x_n
+            \end{array}\right)
+            $
+        </p>
+        <p>
+            Remember that multiplying a row vector by a column vector gives
+            a real, single dimensional value:
+        </p>
+        <p>
+            $\displaystyle{
+            \left(
+            \begin{array}{cccc}
+            p_1&p_2&\cdots &p_n
+            \end{array}    
+            \right)
+
+            \left(
+            \begin{array}{c}
+            x_1\\ x_2\\ \vdots\\ x_n
+            \end{array}    
+            \right)
+            =
+            \sum_{i=1}^{n}p_ix_i\in\mathbb{R}
+            }$
+        </p>
+        <p>
+            So, $\vec{x}^T\vec{x}\in\mathbb{R}$
+        </p>
+
+        <h2>Euclidean Norm</h2>
+        <p>
+            A common application of this is in computing the Euclidean norm, or
+            "length" of a vector.
+        </p>
+        <p>
+            The dot product:
+            $\displaystyle{
+            \vec{x}\cdot\vec{y}=\vec{x}^T\vec{y}=\sum_{i=1}^nx_iy_i
+            }$
+        </p>
+        <p>
+            And hence the euclidean norm:
+            $\displaystyle{
+            {\|\vec{x}\|} 
+            =\sqrt{\sum_{i=1}^{n}x_i^2}=\sqrt{\vec{x}\cdot\vec{x}}
+            }$
+        </p>
+
+        <h2>Orthogonality</h2>
+        <p>
+            Two vectors are Orthogonal if they are perpendicular to each other,
+            that is, their dot product is equal to 0:
+        </p>
+        <p>
+            $\displaystyle{
+                \vec{a}\cdot\vec{b}=
+                \sum_{i=1}^{n}a_ib_i=0
+            }$
+        </p>
+    </body>
+</html>

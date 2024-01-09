@@ -211,3 +211,8 @@ iframe {
 .button:hover {
     background: var(--theme-secondary);
 }
+
+.contents-list {
+    color: var(--theme-text);
+    margin: 20px;
+}

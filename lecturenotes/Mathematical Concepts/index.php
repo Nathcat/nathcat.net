@@ -23,7 +23,10 @@
 Vectors and Matrices
     <a href="Vectors and Matrices/Vectors.html">Vectors</a>
     <a href="Vectors and Matrices/Matrices.html">Matrices</a>
-
+Sets
+    <a href="Sets/Combinations and Permutations.html#combinations">Combinations</a>
+    <a href="Sets/Combinations and Permutations.html#permutations">Permutations</a>
+    
             </pre>
         </div>
 

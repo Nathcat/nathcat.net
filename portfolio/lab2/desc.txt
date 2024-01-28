@@ -1,3 +1,0 @@
-18th October 2023
-
-This Lab class was an introduction to basic HTML and CSS concepts.

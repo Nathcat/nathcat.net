@@ -60,11 +60,27 @@
                         </div>
 
                         <div id="p_1" class="content-card" style="left: 100%;">
-                            <h2>Project 2</h2>
-                        </div>
-
-                        <div id="p_2" class="content-card" style="left: 200%;">
-                            <h2>Project 3</h2>
+                        <div class="row align-center">
+                                <img class="circle-photo" src="../static/images/cat_envelope-playstore.png">
+                                <h2 style="margin-left: 10px;">MessageCat</h2>
+                            </div>
+                            <p>
+                                MessageCat is the project I developed or my A-Level coursework, for which I scored very highly.
+                            </p>
+                            <p>
+                                The main idea of the project was a lightweight, secure, messaging system. The original version I developed for
+                                my coursework had a number of flaws, for example it was only fully functional on Android 12 and below, and
+                                the protocol only really allowed for native Java client applications. 
+                            </p>
+                            <p>
+                                Since I completed my A-Levels I have been working on a new version which is significantly more portable to other
+                                client platforms, and more efficient. The backbone of the application is complete, I simply have not fully
+                                implemented it into the application itself.
+                            </p>
+                            <p>
+                                MessageCat is not publically available, although you may find the original client application's source code
+                                on my GitHub page.
+                            </p>
                         </div>
                     </div>
 

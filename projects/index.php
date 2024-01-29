@@ -79,7 +79,7 @@
                             </p>
                             <p>
                                 MessageCat is not publically available, although you may find the original client application's source code
-                                on my GitHub page.
+                                on my GitHub page, and you may view the documentation I wrote for it <a href="../static/docs/Nathan Baines - MessageCat.pdf">here</a>.
                             </p>
                         </div>
                     </div>

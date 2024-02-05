@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Problem Interfaces</title>
+
+        <script type="text/javascript"
+            src="https://www.maths.nottingham.ac.uk/plp/pmadw/LaTeXMathML.js">
+        </script>
+         
+        <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+    </head>
+
+    <body>
+        <h1>Problem Interfaces</h1>
+
+        <p>
+            A Problem interfaces specifies the problem we want to solve, a data structure
+            represents a solution to the problem, or an implementation of it.
+        </p>
+        <p>
+            <h3>Interface</h3>
+            <ul>
+                <li>Specification.</li>
+                <li>What data to store.</li>
+                <li>Which operations are supported.</li>
+                <li>Problem.</li>
+            </ul>
+        </p>
+        <p>
+            <h3>Data Structure</h3>
+            <ul>
+                <li>Representation.</li>
+                <li>How to store the data.</li>
+                <li>Algorithms implementing the operations.</li>
+                <li>Solution.</li>
+            </ul>
+        </p>
+
+        <h2>Static sequence interface</h2>
+        <p>
+            This problem is concerned with storing data in a static sequence, static meaning it
+            cannot change. The items themselves may be changed but the properties of the sequence
+            itself (length, data type, etc...) cannot be changed.
+        </p>
+        <p>
+            Operations:
+            <ul>
+                <li><md-span>`BUILD(X)`</md-span> - Build a static sequence from collection $X$.</li>
+                <li><md-span>`ITER_SEQ()`</md-span> - Get each item in the sequence.</li>
+                <li><md-span>`GET_AT(i)`</md-span> - Get $x_i$.</li>
+                <li><md-span>`SET_AT(i, x)`</md-span> - Set $x_i\leftarrow x$.</li>
+                <li><md-span>`LEN()`</md-span> - Return the number of items $n$ in the sequence.</li>
+            </ul>
+        </p>
+        <p>
+            This interface is solved using a simple, static array.
+        </p>
+
+        <h2>Dynamic sequence interface</h2>
+        <p>
+            This problem is concerned with storing data in a way such the the properties of
+            the sequence itself may change. Items may be added / removed, and the sequence
+            is dynamically resized accordingly.
+        </p>
+        <p>
+            This includes the same operations as a static sequence, with two additions:
+            <ul>
+                <li><md-span>`INSERT_AT(i, x)`</md-span> - Insert $x$ at $i$ such that $x_i\leftarrow x$, and all original $x_i\rightarrow x_{i+1}$, the same for all the following elements of the sequence.</li>
+                <li><md-span>`REMOVE_AT(i)`</md-span> - Remove $x_i$.</li>
+            </ul>
+        </p>
+        <p>
+            These are the most common implementations of this:
+            <ul>
+                <li>Static arrays</li>
+                <li>Linked lists</li>
+                <li>Dynamic arrays</li>
+            </ul>
+        </p>
+        <p>
+            Note that static arrays are listed. You may implement a dynamic sequence using
+            a static array, but this is not particularly efficient according to our model
+            of computation, when compared with something like a linked list implementation,
+            but then referencing an element at a particular index would be faster in a static
+            array implementation than a linked list.
+        </p>
+        <p>
+            The main downside of a linked list is that you cannot go straight to the middle / end
+            without iterating through it to the desired point. There is the idea of a doubly linked list,
+            which stores a pointer to the previous element in the list with each element, and a 
+            pointer to the tail of the list rather than just the head. This improves this issue,
+            but does not completely solve it and the time to reference any particular item not
+            at the front or end of the list still grows with a linear complexity (although in
+            practice it would more than likely be faster).
+        </p>
+    </body>
+</html>

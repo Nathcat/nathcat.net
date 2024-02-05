@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Lecture Notes</title>
-        <link rel="stylesheet" href="../../css/common.css">
+        <link rel="stylesheet" href="../static/css/common.css">
     </head>
 
     <body>
@@ -28,7 +28,7 @@ function contents($path, $filter, $prepend) {
     }
 }
 
-include("../../../header.php");
+include("../header.php");
 ?>
         <div class="content-card">
             <h2>Lecture notes</h2>
@@ -51,7 +51,7 @@ echo "<div class='content-card'><h2>Contents</h2><pre>";
 contents(".", "/php/", "");
 echo "</pre></div>";
 
-include("../../../footer.php");        
+include("../footer.php");        
         ?>
     </body>
 </html>

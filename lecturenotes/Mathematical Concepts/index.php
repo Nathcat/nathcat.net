@@ -2,11 +2,11 @@
 <html>
     <head>
         <title>Mathematical Concepts</title>
-        <link rel="stylesheet" href="../../../css/common.css">
+        <link rel="stylesheet" href="../../static/css/common.css">
     </head>
 
     <body>
-        <?php include("../../../../header.php"); ?>
+        <?php include("../../header.php"); ?>
 
         <div class="content-card">
             <h2>Mathematical Concepts</h2>
@@ -18,6 +18,6 @@
             </p>
         </div>
 
-        <?php include("../../../../footer.php"); ?>
+        <?php include("../../footer.php"); ?>
     </body>
 </html>

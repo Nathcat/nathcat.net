@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Introduction</title>
+
+        <script type="text/javascript"
+            src="https://www.maths.nottingham.ac.uk/plp/pmadw/LaTeXMathML.js">
+        </script>
+    </head>
+
+    <body>
+        <h1>Introduction</h1>
+
+        <h2>What is an Algorithm?</h2>
+        <p>
+            An algorithm is a well-defined computation procedure which takes some input and
+            produces an output in a finite time. An algorithm may be called correct if it both
+            produces the desired output, and halts.
+        </p>
+        <p>
+            An algorithm can be proved to be correct using the principle of induction:
+        </p>
+        <p>
+            $\displaystyle{\begin{array}{l}
+                P(0) \mathrm{ is true} \\
+                \mathrm{For some } k\geq 0, P(k)\Rightarrow P(k+1)
+            \end{array}}$
+        </p>
+
+        <h2>Asymptotic Complexity</h2>
+        <p>
+            There are three notations for Asymptotic Complexity of Algorithms:
+        </p>
+        <p>
+            $\displaystyle{\begin{array}{l}
+                O(g(n))\geq\Theta (g(n))\geq\Omega (g(n))
+            \end{array}}$
+        </p>
+        <p>
+            $O$ and $\Omega$ notations are upper and lower bounds for the growth of a function
+            respectively, and $\Theta$ is a tight bound lying between the two.
+        </p>
+
+        <h2>Computational Model</h2>
+        <p>
+            We will model a computer as an infinite array of machine words.
+        </p>
+        <p>
+            <b><i>Word - A sequence of bits.</i></b>
+        </p>
+        <p>
+            This infinite array of machine words is called memory. We also have a process which
+            is able to operate on this memory.
+        </p>
+        <p>
+            We assume that:
+        </p>
+        <p>
+            <ul>
+                <li>Basic binary operations on two words are performed in $\Theta (1)$.</li>
+                <li>
+                    Given a word $a$, the processor may read / write the word whose address
+                    is $a$ in $\Theta (1)$.
+                </li>
+                <li>
+                    The processor may allocated and initialise $n$ consecutive words in $\Theta (n)$.
+                </li>
+            </ul>
+        </p>
+        <p>
+            Given these assumptions, if we are to operate on an input of $n$ words, then the size
+            of the machine words $w$ must satisfy $2^w\geq n$, and $w\geq log_2(n)$, to ensure
+            that the processor is able to address the entire input. Otherwise the size of a word
+            would be insufficient to offer enough combinations to address all of the words in
+            the input.
+        </p>
+    </body>
+</html>

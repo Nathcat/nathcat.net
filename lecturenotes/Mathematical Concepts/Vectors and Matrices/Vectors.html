@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vectors</title>
+
+        <script type="text/javascript"
+            src="https://www.maths.nottingham.ac.uk/plp/pmadw/LaTeXMathML.js">
+        </script>
+    </head>
+
+    <body>
+        <h1>Vectors</h1>
+        <p>
+            Vectors are a way of representing a position in an n-dimensional space, most commonly 2 or 3 dimensions.
+        </p>
+        <p>
+            They consist of multiple components, the number of components is equal to the number of dimensions the vector exists
+            in, and each component describes a displacement along an axis for that dimension. Hence by combining these
+            displacements, we have a final position.
+        </p>
+        <p>
+            There are generally two ways in which Vectors are represented, as rows, and as columns:
+        </p>
+        <p>
+            $\displaystyle{
+                \vec{a}=\left(
+                \begin{array}{cccc}
+                \\a_1&a_2&\cdots &a_n
+                \end{array}
+                \right)
+            }$ and $\displaystyle{
+                \vec{b}=\left(
+                \begin{array}{c}
+                b_1\\b_2\\\vdots\\b_n
+                \end{array}    
+                \right)
+            }$
+        </p>
+        <p>
+            It is common to think about vectors as a type of matrix, as they are commonly used in operations with matrices,
+            but we may interpret them differently to a matrix.
+        </p>
+
+        <h2>Vector Transposition</h2>
+        <p>
+            Vectors may be transposed to transform them between row and column
+            representations.
+        </p>
+        <p>
+            $
+            \vec{x}=
+            \left(\begin{array}{c}
+            x_1\\ x_2\\ \vdots\\ x_n
+            \end{array}\right) \in \mathbb{R}^n
+            \to
+            \vec{x}^T=\left(\begin{array}{cccc}
+            \\x_1&x_2&\cdots &x_n
+            \end{array}\right)
+            $
+        </p>
+        <p>
+            Remember that multiplying a row vector by a column vector gives
+            a real, single dimensional value:
+        </p>
+        <p>
+            $\displaystyle{
+            \left(
+            \begin{array}{cccc}
+            \\p_1&p_2&\cdots &p_n
+            \end{array}    
+            \right)
+
+            \left(
+            \begin{array}{c}
+            x_1\\ x_2\\ \vdots\\ x_n
+            \end{array}    
+            \right)
+            =
+            \sum_{i=1}^{n}p_ix_i\in\mathbb{R}
+            }$
+        </p>
+        <p>
+            So, $\vec{x}^T\vec{x}\in\mathbb{R}$
+        </p>
+
+        <h2>Euclidean Norm</h2>
+        <p>
+            A common application of this is in computing the Euclidean norm, or
+            "length" of a vector.
+        </p>
+        <p>
+            The dot / scalar product:
+            $\displaystyle{
+            \vec{x}\cdot\vec{y}=\vec{x}^T\vec{y}=\sum_{i=1}^nx_iy_i
+            }$
+        </p>
+        <p>
+            And hence the euclidean norm:
+            $\displaystyle{
+            {\|\vec{x}\|} 
+            =\sqrt{\sum_{i=1}^{n}x_i^2}=\sqrt{\vec{x}\cdot\vec{x}}
+            }$
+        </p>
+
+        <h2>Orthogonality</h2>
+        <p>
+            Two vectors are Orthogonal if they are perpendicular to each other,
+            that is, their dot product is equal to 0:
+        </p>
+        <p>
+            $\displaystyle{
+                \vec{a}\cdot\vec{b}=
+                \sum_{i=1}^{n}a_ib_i=0
+            }$
+        </p>
+    </body>
+</html>

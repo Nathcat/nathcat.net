@@ -2,36 +2,59 @@
 <html>
     <head>
         <title>Lecture Notes</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="../static/styles/common.css">
-        <link rel="stylesheet" href="../static/styles/portfolio.css">
+        <link rel="stylesheet" href="../static/css/common.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     </head>
 
     <body>
-        <?php include("../header.php"); ?>
+        <?php
 
-        <div class="container-fluid" style="padding: 0px;">
-            <div class="col-md-12">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2>Lecture Notes</h2>
-                        <p>
-                            Here you will find the lecture notes I created while studying Computer Science at the University Of Sussex,
-                            I hope they help other students, or anyone to gain a better understanding of certain topics.
-                        </p>
-                    </div>
-                    
-<pre class="contents-list">
-First year
-    <a href="Mathematical Concepts">Mathematical Concepts</a>
-    <a href="Introduction to Multimedia">Introduction to Multimedia</a>
-</pre>
-                </div>
-            </div>
-        </div>
+function contents($path, $filter, $prepend) {
+    $dir = scandir($path);
+    
+    foreach($dir as $name) {
+        if ($name == "." || $name == "..") continue;
 
-        <?php include("../footer.php"); ?>
+        if (!preg_match($filter, $name)) {
+            if (is_dir($path."/$name")) echo "\n";
+
+            echo "$prepend<a href='$path/$name'";
+            if (is_dir($path."/$name")) echo" style='font-size: larger; font-weight: bolder;'";
+            echo ">$name</a>\n";
+        }
+
+        if (is_dir($path."/$name")) {
+            contents($path."/$name", $filter, $prepend."\t");
+        }
+    }
+}
+
+include("../header.php");
+?>
+        <div class="content-card">
+            <h2>Lecture notes</h2>
+            <p>
+                Here you will find my notes for the lectures I attended while studying at the University of Sussex.
+            </p>
+            <p>
+                I have put them here in case they help someone else understand something in those topics. I write my
+                notes in a way that helps me understand the topics they are talking about, this might mean that they
+                are written differently to how they are given in the lectures.
+            </p>
+            <p>
+                Hopefully, they will help someone understand something in the same way they helped me understand.
+            </p>
+        </div>        
+<?php
+$modules_dir = scandir(".");
+
+echo "<div class='content-card'><h2>Contents</h2><pre>";
+contents(".", "/php/", "");
+echo "</pre></div>";
+
+include("../footer.php");        
+        ?>
     </body>
 </html>

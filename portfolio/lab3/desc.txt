@@ -1,3 +1,0 @@
-25th October 2023
-
-This Lab class was an introduction to Bootstrap CSS, and by extension JavaScript and JQuery.

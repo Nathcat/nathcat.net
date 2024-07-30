@@ -34,30 +34,29 @@
             </div>-->
 
             <div class="column justify-center align-center" style="margin-top: 20px;">
-                <img src="static/images/me.jpg" class="circle-photo">
-                <h2>Nathan Baines</h2>
-                <h3 style="margin-top: 0px;"><i>Programming with Passion</i></h3> 
+                <img src="static/images/me.jpg" class="large-circle-photo">
+                <h3><i>Programming with Passion</i></h3> 
             </div>
 
             <div class="content-card column justify-center align-center">
                 <h2 style="width: fit-content;">My GitHub</h2>
 
                 <div class="row justify-center align-center">
-                    <img src="https://github-readme-stats.vercel.app/api?username=Nathcat&show_icons=true&theme=radical">
+                    <img style="width: 50vw;" src="https://github-readme-stats.vercel.app/api?username=Nathcat&show_icons=true&theme=radical&hide_border=true">
                 </div>
 
                 <div class="row justify-center align-center">
-                    <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Nathcat&theme=radical">
+                    <img style="width: 50vw;" src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Nathcat&theme=radical&hide_border=true">
                 </div>
 
                 <div class="row justify-center align-center">
-                    <img src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Nathcat&theme=radical">
-                    <img src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Nathcat&theme=radical">
+                    <img style="width: 25vw;" src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Nathcat&theme=radical&hide_border=true">
+                    <img style="width: 25vw;" src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Nathcat&theme=radical&hide_border=true">
                 </div>
 
                 <div class="row justify-center align-center">
-                    <img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=Nathcat&theme=radical">
-                    <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Nathcat&theme=radical">  
+                    <img style="width: 25vw;" src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=Nathcat&theme=radical&hide_border=true">
+                    <img style="width: 25vw;" src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Nathcat&theme=radical&hide_border=true">  
                 </div>
             </div>
 

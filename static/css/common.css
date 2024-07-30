@@ -80,6 +80,14 @@ a:hover {
     box-sizing: border-box;
 }
 
+.content-card .sub-content-card {
+    border: 2px solid var(--quad-color);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
 .spacer {
     flex-grow: 1;
 }

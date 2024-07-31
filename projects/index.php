@@ -29,14 +29,14 @@
                     </div>
                 </div>
 
-                <div class="row justify-center align-center">
+                <div style="width: 100%;" class="row justify-center align-center">
                     <span id="slide-button-prev" class="slide-button" onclick="prev()">
                         <svg fill="var(--quad-color)" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m13.789 7.155c.141-.108.3-.157.456-.157.389 0 .755.306.755.749v8.501c0 .445-.367.75-.755.75-.157 0-.316-.05-.457-.159-1.554-1.203-4.199-3.252-5.498-4.258-.184-.142-.29-.36-.29-.592 0-.23.107-.449.291-.591 1.299-1.002 3.945-3.044 5.498-4.243z"/></svg>
                     </span>
 
                     <div class="project-slideshow">
-                        <div id="p_0" class="content-card" style="left: 0;">
-                            <div class="row align-center">
+                        <div id="p_0" class="content-card column" style="left: 0;">
+                            <div style="width: 100%; justify-content: left;" class="row align-center">
                                 <img class="circle-photo" src="https://play-lh.googleusercontent.com/GdA_JECSRbmEq5nJuzyv09EYDWYAjz7cRLucQ2ElVWNQnvKzeVHYKCCCmhI_LNDvttk=w480-h960">
                                 <h2 style="margin-left: 10px;">Slinger</h2>
                             </div>
@@ -55,8 +55,9 @@
                                 it to a wider audience it seems.
                             </p>
 
-                            <a href="https://play.google.com/store/apps/details?id=com.Nathcat.Slinger"><img style="width: 50%;" src="../static/images/google-play-badge-2022-2.svg"></a>
-                        
+                            <div class="row align-center justify-center">
+                                <a style="width: 25%;"href="https://play.google.com/store/apps/details?id=com.Nathcat.Slinger"><img style="width: 100%;" src="../static/images/google-play-badge-2022-2.svg"></a>
+                            </div>
                         </div>
 
                         <div id="p_1" class="content-card" style="left: 100%;">

@@ -1,10 +1,7 @@
-<div class="column justify-center align-center">
-    <h1>Nathan Baines</h1>
-    <div class="navbar row justify-center align-center">
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/projects">Projects</a>
-        <!--REMOVING THIS <a href="/lecturenotes">Lecture notes</a>-->
-        <a href="/contact">Contact me</a>
-    </div>
+<div class="navbar">
+    <h1 id="navbar-title">Nathan Baines</h1>
+    <div id="navbar-1"><a href="/">Home</a></div>
+    <div id="navbar-2"><a href="/about">About</a></div>
+    <div id="navbar-3"><a href="/projects">Projects</a></div>
+    <div id="navbar-4"><a href="/contact">Contact me</a></div>
 </div>

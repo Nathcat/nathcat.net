@@ -3,7 +3,8 @@
     <head>
         <title>Nathan Baines</title>
 
-        <link rel="stylesheet" href="../static/css/common.css">
+        <link rel="stylesheet" href="../static/css/new-common.css">
+        <link rel="stylesheet" href="../static/css/projects.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -13,9 +14,9 @@
 
     <body>
         <div class="content">
-            <div class="column justify-center align-center">
-                <?php include("../header.php"); ?>
+            <?php include("../header.php"); ?>
 
+            <div class="main"><div style="grid-area: content;">
                 <div class="row justify-center align-center">
                     <div class="content-card">
                         <h2>Projects</h2>
@@ -90,10 +91,10 @@
                     </span>
                 </div>
 
-                <script>buttons();</script>
+                <script>buttons(); resize_slideshow_box();</script>
+            </div></div>
 
-                <?php include("../footer.php"); ?>
-            </div>
+            <?php include("../footer.php"); ?>
         </div>
     </body>
 </html>

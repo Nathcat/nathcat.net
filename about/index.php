@@ -8,6 +8,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     </head>
 
     <body>
@@ -63,7 +64,7 @@
 
                 <div class="content-card column justify-center align-center">
                     <div>
-                        <h2>Languages and Frameworks</h2>
+                        <h2 id="l-and-f">Languages and Frameworks</h2>
                         <p>This is a list of some of the programming languages and frameworks I am familiar with.</p>
                         <p>
                             I've had experience in using all of these frameworks (and a few more not listed here) in my own personal projects,
@@ -87,7 +88,7 @@
                 </div>
 
                 <div class="content-card column justify-center align-center">
-                    <h2>Education</h2>
+                    <h2 id="education">Education</h2>
                     
                     <div class="sub-content-card" style="width: 100%">
                         <h2>GCSEs</h2>

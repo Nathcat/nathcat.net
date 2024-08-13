@@ -66,84 +66,53 @@ a:hover {
     text-decoration: underline;
 }
 
-.navbar a {
+.navbar {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    border-bottom: 1px solid var(--quad-color);
+}
+
+.navbar h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.header-collapsible .collapsed {
+    display: grid;
+    place-items: center;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.header-collapsible .content div {
+    text-align: center;
+    text-wrap: nowrap;
     padding: 5px 20px 5px 20px;
     font-size: larger;
 }
 
-@media (width >= 1000px) {
-    .navbar {
-        width: 100%;
+@media (width > 1000px) {
+    .header-collapsible .content {
         display: grid;
-        grid-area: header;
-        grid-template-columns: 0.1fr 1fr 1fr 1fr 1fr 0.1fr;
-        grid-template-rows: 0.5fr 1fr;
-
+        place-items: center;
+        grid-template-columns: 0.1fr repeat(6, 1fr) 0.1fr;
+        grid-template-rows: 1fr;
         grid-template-areas:
-            ". title title title title ."
-            ". a b c d .";
-    }
-
-    .navbar a {
-        text-wrap: nowrap;
-        font-size: 1.25em;
-        padding: 1.25em;
+            ". a b c d e f .";
     }
 }
 
 @media (max-width: 1000px) {
-    .navbar {
-        width: 100%;
+    .header-collapsible .content {
         display: grid;
-        grid-area: header;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 0.5fr 1fr;
-
-        grid-template-areas:
-            "title title title title"
-            "a b c d";
+        place-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: "a" "b" "c" "d" "e" "f";
     }
-
-    .navbar a {
-        font-size: 1.5em;
-        padding: 1.5em;
-        text-wrap: nowrap;
-    }
-}
-
-.navbar #navbar-title {
-    grid-area: title;
-    text-align: center;
-    justify-self: center;
-    align-self: center;
-}
-
-.navbar #navbar-1 {
-    grid-area: a;
-    text-align: center;
-    justify-self: center;
-    align-self: center;
-}
-
-.navbar #navbar-2 {
-    grid-area: b;
-    text-align: center;
-    justify-self: center;
-    align-self: center;
-}
-
-.navbar #navbar-3 {
-    grid-area: c;
-    text-align: center;
-    justify-self: center;
-    align-self: center;
-}
-
-.navbar #navbar-4 {
-    grid-area: d;
-    text-align: center;
-    justify-self: center;
-    align-self: center;
 }
 
 @media (width > 1000px) {

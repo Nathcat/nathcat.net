@@ -1,5 +1,5 @@
 var current_slide = 0
-const slide_count = 2;
+const slide_count = 3;
 
 function buttons() {
     if (current_slide == 0) {

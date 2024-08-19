@@ -3,7 +3,8 @@
     <head>
         <title>Nathan Baines</title>
 
-        <link rel="stylesheet" href="../static/css/common.css">
+        <link rel="stylesheet" href="../static/css/new-common.css">
+        <link rel="stylesheet" href="../static/css/projects.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -13,9 +14,9 @@
 
     <body>
         <div class="content">
-            <div class="column justify-center align-center">
-                <?php include("../header.php"); ?>
+            <?php include("../header.php"); ?>
 
+            <div class="main"><div style="grid-area: content;">
                 <div class="row justify-center align-center">
                     <div class="content-card">
                         <h2>Projects</h2>
@@ -61,7 +62,7 @@
                         </div>
 
                         <div id="p_1" class="content-card" style="left: 100%;">
-                        <div class="row align-center">
+                            <div class="row align-center">
                                 <img class="circle-photo" src="../static/images/cat_envelope-playstore.png">
                                 <h2 style="margin-left: 10px;">MessageCat</h2>
                             </div>
@@ -83,6 +84,26 @@
                                 on my GitHub page, and you may view the documentation I wrote for it <a href="../static/docs/Nathan Baines - MessageCat.pdf">here</a>.
                             </p>
                         </div>
+
+                        <div id="p_2" class="content-card" style="left: 200%;">
+                            <div class="row align-center">
+                                <h2 style="margin-left: 10px;">Zen</h2>
+                            </div>
+                            <p>
+                                Zen is a series of games I have been working on, they don't have any specific goal but they are simply meant
+                                to be relaxing, and peaceful.
+                            </p>
+                            <p>
+                                While I have not released any of the Zen games properly, I am currently working on Zen 2. You may also click on the links below to download the
+                                Windows builds here if you want to play them.
+                            </p>
+                            <p>
+                                <ul>
+                                    <li><a href="/games/Zen.zip" download>Zen</a> - The original Zen game. Drag your mouse around and the white ball will follow, you must catch all the coloured dots. <i>Please note I made this game a while ago and have since lost access to the source code and the credits for the sounds, many apologies.</i></li>
+                                    <li><a href="/games/Zen 2.zip" download>Zen 2 (Work in progress)</a> - The sequel to Zen. Click the green dots as they appear, the game will end when one of them turns red.</li>
+                                </ul>
+                            </p>
+                        </div>
                     </div>
 
                     <span id="slide-button-next" class="slide-button" onclick="next()">
@@ -90,10 +111,10 @@
                     </span>
                 </div>
 
-                <script>buttons();</script>
+                <script>buttons(); resize_slideshow_box();</script>
+            </div></div>
 
-                <?php include("../footer.php"); ?>
-            </div>
+            <?php include("../footer.php"); ?>
         </div>
     </body>
 </html>

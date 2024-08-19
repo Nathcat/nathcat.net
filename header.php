@@ -1,10 +1,20 @@
-<div class="column justify-center align-center">
-    <h1>Nathan Baines</h1>
-    <div class="navbar row justify-center align-center">
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/projects">Projects</a>
-        <!--REMOVING THIS <a href="/lecturenotes">Lecture notes</a>-->
-        <a href="/contact">Contact me</a>
+<script src="/static/scripts/collapsible-header.js"></script>
+
+<div class="navbar">
+    <h1 id="navbar-title">Nathan Baines</h1>
+    <div class="header-collapsible">
+        <div class="collapsed">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+        </div>
+        <div class="content">
+            <div style="grid-area: a"><a href="/">Home</a></div>
+            <div style="grid-area: b"><a href="/about">About</a></div>
+            <div style="grid-area: c"><a href="/about#l-and-f">Frameworks</a></div>
+            <div style="grid-area: d"><a href="/about#education">Education</a></div>
+            <div style="grid-area: e"><a href="/projects">Projects</a></div>
+            <div style="grid-area: f"><a href="/contact">Contact me</a></div>
+        </div>
     </div>
 </div>

@@ -1,5 +1,5 @@
 var current_slide = 0
-const slide_count = 2;
+const slide_count = 3;
 
 function buttons() {
     if (current_slide == 0) {
@@ -34,6 +34,7 @@ function next() {
     current_slide++;
 
     buttons();
+    resize_slideshow_box()
 }
 
 function prev() {
@@ -53,4 +54,15 @@ function prev() {
     current_slide--;
 
     buttons();
+    resize_slideshow_box()
+}
+
+function resize_slideshow_box() {
+    // Get the size of the box currently in the slideshow
+    let target_height = $("#p_" + current_slide).height() + parseInt($("#p_" + current_slide).css("padding-bottom").slice(0, -2)) + parseInt($("#p_" + current_slide).css("padding-top").slice(0, -2));
+    $(".project-slideshow").animate(
+        {
+            height: target_height
+        }, {}
+    );
 }

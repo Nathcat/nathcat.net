@@ -1,0 +1,5 @@
+<form>
+    <input type="text" name="username" placeholder="Enter username..." />
+    <input type="password" name="password" placeholder="Enter password..." />
+    <input type="submit" value="Login" />
+</form>

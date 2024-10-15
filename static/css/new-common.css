@@ -277,6 +277,18 @@ a:hover {
     box-sizing: border-box;
 }
 
+.error-card {
+    background-color: var(--quad-color);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.error-card h1, .error-card h2, .error-card h3, .error-card h4, .error-card h5, .error-card h6, .error-card p{
+    color: var(--primary-color);
+}
+
 .spacer {
     flex-grow: 1;
 }
@@ -287,4 +299,23 @@ a:hover {
 
 .quarter-spacer {
     flex-grow: 0.25;
+}
+
+input[type=text], input[type=password], input[type=submit], button {
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid var(--tertiary-color);
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+}
+
+input[type=submit], button {
+    border: 5px solid var(--quad-color);
+}
+
+input[type=submit]:hover, button:hover {
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    transition: 500ms;
 }

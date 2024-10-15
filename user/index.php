@@ -15,7 +15,15 @@
             <?php include("../header.php"); ?>
 
             <div class="main align-center">
-                <?php session_start(); if (array_key_exists("user", $_SESSION)) { include("user-view.php"); } else { include("login-form.php"); } ?>
+                <?php 
+                session_start();
+
+                if (array_key_exists("login-error", $_SESSION)) {
+                    echo "<div class='error-card'><h2>Login failed</h2><p>" . $_SESSION["login-error"] . "</p></div>";
+                }
+
+                if (array_key_exists("user", $_SESSION)) { include("user-view.php"); } else { include("login-form.php"); } 
+                ?>
             </div>
 
             <?php include("../footer.php"); ?>

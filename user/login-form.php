@@ -1,7 +1,37 @@
-<?php $_SESSION["login-originator"] = dirname($_SERVER["PHP_SELF"]); ?>
+<script>
+    function login_form_callback(response) {
+        let fd = new FormData();
 
-<form class="column" method="POST" action="try-login.php">
-    <input type="text" name="username" placeholder="Enter username..." />
-    <input type="password" name="password" placeholder="Enter password..." />
-    <input type="submit" value="Login" />
-</form>
+        console.log(response);
+        
+        if (response.status === "success") {
+            fd.set("user", JSON.stringify(response.user));
+        }
+        else {
+            fd.set("login-error", response.message);
+        }
+        
+        fetch("login.php", {
+            method: "POST",
+            body: fd
+        })
+        .then((r) => { location.reload(); });
+    }
+</script>
+
+<div class="column">
+    <input id="login-username" type="text" name="username" placeholder="Enter username..." />
+    <input id="login-password" type="password" name="password" placeholder="Enter password..." />
+    <button onclick="sso_try_login(document.getElementById('login-username').value, document.getElementById('login-password').value, login_form_callback);">Login</button>
+</div>
+
+<script>
+    let login_enter_callback = (event) => {
+        if (event.key === "Enter") {
+            sso_try_login(document.getElementById('login-username').value, document.getElementById('login-password').value, login_form_callback);
+        }
+    };
+
+    document.getElementById("login-username").addEventListener("keypress", login_enter_callback);
+    document.getElementById("login-password").addEventListener("keypress", login_enter_callback);
+</script>

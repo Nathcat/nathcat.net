@@ -130,11 +130,11 @@ a:hover {
         width: 100%;
         display: grid;
         grid-area: footer;
-        grid-template-columns: 4fr 1fr 1fr 1fr 1fr 4fr;
+        grid-template-columns: 4fr 1fr 1fr 1fr 1fr 1fr 4fr;
         grid-template-rows: 1fr 1fr;
         grid-template-areas:
-            ". github replit instagram facebook ."
-            ". . copyright copyright . .";
+            ". github replit instagram facebook linkedin ."
+            ". . copyright copyright copyright . .";
     }
 
     .footer * svg {
@@ -148,10 +148,10 @@ a:hover {
         width: 100%;
         display: grid;
         grid-area: footer;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         grid-template-areas:
-            "github replit instagram facebook"
+            "github replit instagram facebook linkedin"
             ". copyright copyright .";
     }
 
@@ -188,6 +188,13 @@ a:hover {
 
 .footer #footer-facebook {
     grid-area: facebook;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+}
+
+.footer #footer-linkedin {
+    grid-area: linkedin;
     text-align: center;
     justify-self: center;
     align-self: center;

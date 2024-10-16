@@ -16,6 +16,18 @@
             <?php include("../header.php"); ?>
 
             <div class="main align-center">
+                <div class="content-card">
+                    <h2>User Accounts</h2>
+                    <p>
+                        To help people using my projects I have created a centralised user account system, here is an example of its' implementation,
+                        or alternatively you can go to <a href="https://data.nathcat.net/sso">AuthCat</a> to manage your account directly.
+                    </p>
+                    <p>
+                        Any of my projects which have a user account system will use this system to login, so you can use the same credentials
+                        for all of my projects.
+                    </p>
+                </div>
+                
                 <?php 
                 $session_name = session_name("AuthCat-SSO");
                 session_set_cookie_params(0, '/', '.nathcat.net');

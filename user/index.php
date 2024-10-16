@@ -23,7 +23,17 @@
                     echo "<div class='error-card'><h2>Login failed</h2><p>" . $_SESSION["login-error"] . "</p></div>";
                 }
 
-                if (array_key_exists("user", $_SESSION)) { include("user-view.php"); } else { include("login-form.php"); } 
+                if (array_key_exists("user", $_SESSION)) { 
+                    include("user-view.php"); 
+                } 
+                else { 
+                    if (!array_key_exists("newUser", $_GET)) { 
+                        include("login-form.php"); 
+                    } 
+                    else {
+                        include("new-user-form.php");
+                    }
+                }
                 ?>
             </div>
 

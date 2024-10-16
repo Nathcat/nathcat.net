@@ -99,10 +99,10 @@ a:hover {
     .header-collapsible .content {
         display: grid;
         place-items: center;
-        grid-template-columns: 0.1fr repeat(6, 1fr) 0.1fr;
+        grid-template-columns: 0.1fr repeat(7, 1fr) 0.1fr;
         grid-template-rows: 1fr;
         grid-template-areas:
-            ". a b c d e f .";
+            ". a b c d e f g .";
     }
 }
 
@@ -111,8 +111,8 @@ a:hover {
         display: grid;
         place-items: center;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr);
-        grid-template-areas: "a" "b" "c" "d" "e" "f";
+        grid-template-rows: repeat(7, 1fr);
+        grid-template-areas: "a" "b" "c" "d" "e" "f" "g";
     }
 
     .header-collapsible .collapsed {
@@ -301,7 +301,7 @@ a:hover {
     flex-grow: 0.25;
 }
 
-input[type=text], input[type=password], input[type=submit], button {
+input[type=text], input[type=email], input[type=password], input[type=submit], button {
     padding: 5px;
     margin: 10px;
     border-radius: 10px;

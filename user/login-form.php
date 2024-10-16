@@ -19,10 +19,11 @@
     }
 </script>
 
-<div class="column">
+<div class="column align-center">
     <input id="login-username" type="text" name="username" placeholder="Enter username..." />
     <input id="login-password" type="password" name="password" placeholder="Enter password..." />
     <button onclick="sso_try_login(document.getElementById('login-username').value, document.getElementById('login-password').value, login_form_callback);">Login</button>
+    <a href="<?php echo dirname($_SERVER["PHP_SELF"]); ?>?newUser">Or, create a new user</a>
 </div>
 
 <script>

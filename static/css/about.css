@@ -47,20 +47,4 @@
         max-width: calc(15vw - 20px);
         max-height: calc(18.75vw - 20px);
     }
-
-    p {
-        font-size: 1.25em;
-    }
-
-    h2 {
-        font-size: 3em;
-    }
-
-    h3 {
-        font-size: 1.5em;
-    }
-
-    li {
-        font-size: 1.25em;
-    }
 }

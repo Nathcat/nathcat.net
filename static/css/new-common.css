@@ -152,7 +152,7 @@ a:hover {
         grid-template-rows: 1fr 1fr;
         grid-template-areas:
             "github replit instagram facebook linkedin"
-            ". copyright copyright .";
+            ". copyright copyright copyright .";
     }
 
     .footer #footer-copyright p {

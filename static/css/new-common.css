@@ -238,8 +238,31 @@ a:hover {
         border-radius: 20vw;
         min-width: 150px;
         min-height: 150px;
-        border-image-source: linear-gradient(to right, #e600ff, #00ccff);
-        border-width: 10px;
+    }
+
+    .profile-picture {
+        /*position: relative;*/
+
+        width: calc(20vw + 10px);
+        height: calc(20vw + 10px);
+        border-radius: 20vw;
+        min-width: 150px;
+        min-height: 150px;
+
+        background: linear-gradient(45deg, #e600ff 0%, #00ccff 100%);
+    }
+
+    .profile-picture img {
+        /*position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);*/
+
+        width: 20vw;
+        height: 20vw;
+        border-radius: 20vw;
+        min-width: 150px;
+        min-height: 150px;
     }
 }
 
@@ -258,8 +281,31 @@ a:hover {
         border-radius: 20vw;
         min-width: 200px;
         min-height: 200px;
-        border-image-source: linear-gradient(to right, #e600ff, #00ccff);
-        border-width: 10px;
+    }
+
+    .profile-picture {
+        /*position: relative;*/
+
+        width: calc(40vw + 10px);
+        height: calc(40vw + 10px);
+        border-radius: 20vw;
+        min-width: 200px;
+        min-height: 200px;
+
+        background: linear-gradient(45deg, #e600ff 0%, #00ccff 100%);
+    }
+
+    .profile-picture img {
+        /*position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);*/
+
+        width: 40vw;
+        height: 40vw;
+        border-radius: 20vw;
+        min-width: 200px;
+        min-height: 200px;
     }
 }
 

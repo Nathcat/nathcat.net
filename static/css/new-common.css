@@ -238,6 +238,8 @@ a:hover {
         border-radius: 20vw;
         min-width: 150px;
         min-height: 150px;
+        border-image-source: linear-gradient(to right, #e600ff, #00ccff);
+        border-width: 10px;
     }
 }
 
@@ -256,6 +258,8 @@ a:hover {
         border-radius: 20vw;
         min-width: 200px;
         min-height: 200px;
+        border-image-source: linear-gradient(to right, #e600ff, #00ccff);
+        border-width: 10px;
     }
 }
 
@@ -341,9 +345,4 @@ input[type=submit]:hover, button:hover {
     background-color: var(--tertiary-color);
     color: var(--secondary-color);
     transition: 500ms;
-}
-
-.pfp-border {
-    border-image-source: linear-gradient(to right, #e600ff, #00ccff);
-    border-radius: 10px;
 }

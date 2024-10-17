@@ -16,7 +16,9 @@
             <?php include("header.php"); ?>
 
             <div class="main align-center">
+                
                 <img class="large-circle-photo" src="static/images/me.jpg">
+                
                 <h2><i>Programming with Passion</i></h2>
 
                 <div class="content-card github-gallery">

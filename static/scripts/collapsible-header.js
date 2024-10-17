@@ -12,6 +12,10 @@ function update() {
 }
 
 function toggle_collapsed() {
+    if (window.innerWidth >= 1000) {
+        return;
+    }
+    
     let element = $(".header-collapsible");
     if (element.find(".content").css("display") == "none") {
         element.find(".content").css("display", "grid");

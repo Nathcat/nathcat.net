@@ -99,10 +99,10 @@ a:hover {
     .header-collapsible .content {
         display: grid;
         place-items: center;
-        grid-template-columns: 0.1fr repeat(6, 1fr) 0.1fr;
+        grid-template-columns: 0.1fr repeat(7, 1fr) 0.1fr;
         grid-template-rows: 1fr;
         grid-template-areas:
-            ". a b c d e f .";
+            ". a b c d e f g .";
     }
 }
 
@@ -111,8 +111,8 @@ a:hover {
         display: grid;
         place-items: center;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr);
-        grid-template-areas: "a" "b" "c" "d" "e" "f";
+        grid-template-rows: repeat(7, 1fr);
+        grid-template-areas: "a" "b" "c" "d" "e" "f" "g";
     }
 
     .header-collapsible .collapsed {
@@ -123,6 +123,22 @@ a:hover {
     .header-collapsible .content div a {
         font-size: 2em;
     }
+
+    p, a {
+        font-size: 1.25em;
+    }
+
+    h2 {
+        font-size: 3em;
+    }
+
+    h3, input, button {
+        font-size: 1.5em;
+    }
+
+    li {
+        font-size: 1.25em;
+    }
 }
 
 @media (width > 1000px) {
@@ -130,11 +146,11 @@ a:hover {
         width: 100%;
         display: grid;
         grid-area: footer;
-        grid-template-columns: 4fr 1fr 1fr 1fr 1fr 4fr;
+        grid-template-columns: 4fr 1fr 1fr 1fr 1fr 1fr 4fr;
         grid-template-rows: 1fr 1fr;
         grid-template-areas:
-            ". github replit instagram facebook ."
-            ". . copyright copyright . .";
+            ". github replit instagram facebook linkedin ."
+            ". . copyright copyright copyright . .";
     }
 
     .footer * svg {
@@ -148,11 +164,11 @@ a:hover {
         width: 100%;
         display: grid;
         grid-area: footer;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         grid-template-areas:
-            "github replit instagram facebook"
-            ". copyright copyright .";
+            "github replit instagram facebook linkedin"
+            ". copyright copyright copyright .";
     }
 
     .footer #footer-copyright p {
@@ -193,6 +209,13 @@ a:hover {
     align-self: center;
 }
 
+.footer #footer-linkedin {
+    grid-area: linkedin;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+}
+
 .footer #footer-copyright {
     grid-area: copyright;
     text-align: center;
@@ -216,6 +239,31 @@ a:hover {
         min-width: 150px;
         min-height: 150px;
     }
+
+    .profile-picture {
+        /*position: relative;*/
+
+        width: calc(20vw + 10px);
+        height: calc(20vw + 10px);
+        border-radius: 20vw;
+        min-width: 150px;
+        min-height: 150px;
+
+        background: linear-gradient(45deg, #e600ff 0%, #00ccff 100%);
+    }
+
+    .profile-picture img {
+        /*position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);*/
+
+        width: 20vw;
+        height: 20vw;
+        border-radius: 20vw;
+        min-width: 150px;
+        min-height: 150px;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -228,6 +276,31 @@ a:hover {
     }
     
     .large-circle-photo {
+        width: 40vw;
+        height: 40vw;
+        border-radius: 20vw;
+        min-width: 200px;
+        min-height: 200px;
+    }
+
+    .profile-picture {
+        /*position: relative;*/
+
+        width: calc(40vw + 10px);
+        height: calc(40vw + 10px);
+        border-radius: 20vw;
+        min-width: 200px;
+        min-height: 200px;
+
+        background: linear-gradient(45deg, #e600ff 0%, #00ccff 100%);
+    }
+
+    .profile-picture img {
+        /*position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);*/
+
         width: 40vw;
         height: 40vw;
         border-radius: 20vw;
@@ -277,6 +350,18 @@ a:hover {
     box-sizing: border-box;
 }
 
+.error-card {
+    background-color: var(--quad-color);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.error-card h1, .error-card h2, .error-card h3, .error-card h4, .error-card h5, .error-card h6, .error-card p{
+    color: var(--primary-color);
+}
+
 .spacer {
     flex-grow: 1;
 }
@@ -287,4 +372,23 @@ a:hover {
 
 .quarter-spacer {
     flex-grow: 0.25;
+}
+
+input[type=text], input[type=email], input[type=password], input[type=submit], input[type=file], button {
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid var(--tertiary-color);
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+}
+
+input[type=submit], button {
+    border: 5px solid var(--quad-color);
+}
+
+input[type=submit]:hover, button:hover {
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    transition: 500ms;
 }

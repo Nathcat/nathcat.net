@@ -342,3 +342,8 @@ input[type=submit]:hover, button:hover {
     color: var(--secondary-color);
     transition: 500ms;
 }
+
+.pfp-border {
+    border-image-source: linear-gradient(to right, #e600ff, #00ccff);
+    border-radius: 10px;
+}

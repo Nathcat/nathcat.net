@@ -264,6 +264,32 @@ a:hover {
         min-width: 150px;
         min-height: 150px;
     }
+
+    .small-profile-picture {
+        /*position: relative;*/
+
+        width: calc(10vw + 5px);
+        height: calc(10vw + 5px);
+        border-radius: 10vw;
+        min-width: 75px;
+        min-height: 75px;
+
+
+        background: linear-gradient(45deg, #e600ff 0%, #00ccff 100%);
+    }
+
+    .small-profile-picture img {
+        /*position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);*/
+
+        width: 10vw;
+        height: 10vw;
+        border-radius: 10vw;
+        min-width: 75px;
+        min-height: 75px;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -306,6 +332,31 @@ a:hover {
         border-radius: 20vw;
         min-width: 200px;
         min-height: 200px;
+    }
+
+    .small-profile-picture {
+        /*position: relative;*/
+
+        width: calc(20vw + 5px);
+        height: calc(20vw + 5px);
+        border-radius: 10vw;
+        min-width: 100px;
+        min-height: 100px;
+
+        background: linear-gradient(45deg, #e600ff 0%, #00ccff 100%);
+    }
+
+    .small-profile-picture img {
+        /*position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);*/
+
+        width: 20vw;
+        height: 20vw;
+        border-radius: 10vw;
+        min-width: 100px;
+        min-height: 100px;
     }
 }
 

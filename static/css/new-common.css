@@ -268,8 +268,8 @@ a:hover {
     .small-profile-picture {
         /*position: relative;*/
 
-        width: calc(5vw + 5px);
-        height: calc(5vw + 5px);
+        width: calc(10vw + 5px);
+        height: calc(10vw + 5px);
         border-radius: 5vw;
         min-width: 75px;
         min-height: 75px;
@@ -284,8 +284,8 @@ a:hover {
         top: 50%;
         transform: translate(-50%, -50%);*/
 
-        width: 5vw;
-        height: 5vw;
+        width: 10vw;
+        height: 10vw;
         border-radius: 5vw;
         min-width: 75px;
         min-height: 75px;

@@ -15,7 +15,7 @@
             <div style="grid-area: d"><a href="/about#education">Education</a></div>
             <div style="grid-area: e"><a href="/projects">Projects</a></div>
             <div style="grid-area: f"><a href="/contact">Contact me</a></div>
-            <div style="grid-area: g"><a href="/user">Account</a></div>
+            <div style="grid-area: g"><a href="/network">My Network</a></div>
         </div>
     </div>
 </div>

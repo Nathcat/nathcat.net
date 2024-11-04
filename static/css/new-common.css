@@ -443,3 +443,9 @@ input[type=submit]:hover, button:hover {
     color: var(--secondary-color);
     transition: 500ms;
 }
+
+.horizontal-divider {
+    width: 90%;
+    height: 1px;
+    background-color: var(--quad-color);
+}

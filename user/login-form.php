@@ -11,7 +11,7 @@
             fd.set("login-error", response.message);
         }
         
-        fetch(<?php if ($_SERVER["SERVER_NAME"] == "localhost") echo "\"/user/login.php\""; else echo "\"https://data.nathcat.net/sso/login.php\""; ?>, {
+        fetch("/user/login.php", {
             method: "POST",
             body: fd
         })

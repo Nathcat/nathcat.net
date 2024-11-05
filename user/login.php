@@ -1,6 +1,6 @@
 <?php 
 $session_name = session_name("AuthCat-SSO");
-//session_set_cookie_params(0, '/', 'nathcat.net');
+if($_SERVER["SERVER_NAME"] != "localhost") session_set_cookie_params(0, '/', 'nathcat.net');
 session_start();
 
 if ($_POST["user"]) {

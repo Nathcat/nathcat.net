@@ -93,6 +93,7 @@
                         </p>
                     </div>
 
+                <?php elseif (array_key_exists("newUser", $_GET)): include("../user/new-user-form.php"); ?>
                 <?php else: include("../user/login-form.php"); endif;?> 
             </div>
 

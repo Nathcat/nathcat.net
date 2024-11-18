@@ -425,7 +425,7 @@ a:hover {
     flex-grow: 0.25;
 }
 
-input[type=text], input[type=email], input[type=password], input[type=submit], input[type=file], button {
+input, button {
     padding: 5px;
     margin: 10px;
     border-radius: 10px;

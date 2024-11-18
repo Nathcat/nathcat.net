@@ -93,6 +93,16 @@
                         </p>
                     </div>
 
+                    <span class="horizontal-divider"></span>
+
+                    <h2 id="SudokuCat"><a href="https://sudoku.nathcat.net">SudokuCat</a></h2>
+                    <div class="error-card">
+                        <h2>In development</h2>
+                        <p>
+                            SudokuCat is currently in development, however it is available to play at the link above.
+                        </p>
+                    </div>
+
                 <?php elseif (array_key_exists("newUser", $_GET)): include("../user/new-user-form.php"); ?>
                 <?php else: include("../user/login-form.php"); endif;?> 
             </div>

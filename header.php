@@ -15,7 +15,7 @@
             <div style="grid-area: d"><a href="/about#education">Education</a></div>
             <div style="grid-area: e"><a href="/projects">Projects</a></div>
             <div style="grid-area: f"><a href="/contact">Contact me</a></div>
-            <div style="grid-area: g"><a href="https://data.nathcat.net/sso?return-page=https://nathcat.net/network">My Network</a></div>
+            <div style="grid-area: g"><a href="/network">My Network</a></div>
         </div>
     </div>
 </div>

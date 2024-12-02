@@ -132,7 +132,7 @@ a:hover {
         font-size: 3em;
     }
 
-    h3, input, button {
+    h3, input, textarea, button {
         font-size: 1.5em;
     }
 
@@ -425,7 +425,7 @@ a:hover {
     flex-grow: 0.25;
 }
 
-input, button {
+input, button, textarea {
     padding: 5px;
     margin: 10px;
     border-radius: 10px;

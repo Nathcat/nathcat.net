@@ -126,6 +126,57 @@
                     </div>
                 </div>
 
+                <div class="column align-center justify-center">
+                    <h2 id="awards">Awards and Competitions</h2>
+
+                    <div class="sub-content-card">
+                        <h2>HackSussex GameJam 2024</h2>
+                        <h3>November 2024 - <i>Winner</i></h3>
+                        <p>
+                            Once again, I teamed up with a group of my friends at
+                            University to create a game in 24 hours.
+                        </p>
+                        <p>
+                            We ended up creating <a href="https://devpost.com/software/hackcat">HackCat</a>, a game
+                            which the judges decided was the overall winner of
+                            the competition for general completeness, and
+                            functionality.
+                        </p>
+                        <p>
+                            I contributed mainly to implemented the graph based
+                            level menu, and had a hand in implementing some of
+                            the fight mechanics. I was also given the task
+                            of resolving issues with Git, which we were using
+                            for source control.
+                        </p>
+                    </div>
+
+                    <div class="sub-content-card">
+                        <h2>HackSussex GameJam 2023</h2>
+                        <h3>November 2023 - <i>Category winner</i></h3>
+                        <p>
+                            For this competition I teamed up with a group of 
+                            friends at my University, to create a game in 24
+                            hours.
+                        </p>
+                        <p>
+                            The game we created, <a href="https://devpost.com/software/in-the-chair">In The Chair</a>,
+                            ended up being the category winner for best procedural
+                            generation.
+                        </p>
+                        <p>
+                            I mostly contributed to implemented the networking and
+                            multiplayer features, and general support to others in
+                            the team who were not as familiar with Unity.
+                        </p>
+                    </div>
+
+                    <div class="sub-content-card">
+                        <h2>Repl.it Summer Hackathon</h2>
+                        <h3>August 2021 - <i>Placed top 20</i></h3>
+                    </div>
+                </div>
+
             </div></div>
 
             <?php include("../footer.php"); ?>

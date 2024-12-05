@@ -126,7 +126,7 @@
                     </div>
                 </div>
 
-                <div class="column align-center justify-center">
+                <div class="content-card column align-center justify-center">
                     <h2 id="awards">Awards and Competitions</h2>
 
                     <div class="sub-content-card">

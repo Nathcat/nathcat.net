@@ -99,6 +99,50 @@
                         longest streak.
                     </p>
                 </div>
+
+                <div class="content-card">
+                    <div class="column align-center justify-center">
+                        <h2>BlogCat</h2>
+                    </div>
+
+                    <p>
+                        BlogCat is a simple blogging application where users can
+                        create posts about events on the network, in the world,
+                        or just generally share their knowledge.
+                    </p>
+                </div>
+
+                <div class="content-card">
+                    <div class="column align-center justify-center">
+                        <h2>CloudCat</h2>
+                    </div>
+
+                    <p>
+                        CloudCat is a simple cloud storage solution for the network,
+                        it allows you to store your files to be accessed anywhere.
+                    </p>
+                    <p>
+                        Other services which make use of cloud storage can also
+                        integrate with CloudCat.
+                    </p>
+                </div>
+
+                <div class="content-card">
+                    <div class="column align-center justify-center">
+                        <h2>NoteCat</h2>
+                    </div>
+
+                    <p>
+                        NoteCat is a note-taking app which allows you to
+                        efficiently write notes in a dynamically rendered markdown
+                        environment.
+                    </p>
+                    <p>
+                        It is also integrated with CloudCat, meaning all your notes
+                        will be stored via its cloud storage system and be
+                        accessible from anywhere!
+                    </p>
+                </div>
             </div>
 
             <?php include("../footer.php"); ?>

@@ -16,6 +16,8 @@
             <?php include("../header.php"); ?>
 
             <div class="main align-center">
+                <img src="https://cdn.nathcat.net/cloud/116bc634-b69a-11ef-9adc-067048c6a237.png">
+
                 <h1>The Nathcat Network</h1>
 
                 <h1><a href="https://apps.nathcat.net">Access the network</a></h1>

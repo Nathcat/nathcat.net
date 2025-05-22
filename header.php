@@ -13,9 +13,10 @@
             <div style="grid-area: b"><a href="/about">About</a></div>
             <div style="grid-area: c"><a href="/about#l-and-f">Frameworks</a></div>
             <div style="grid-area: d"><a href="/about#education">Education</a></div>
-            <div style="grid-area: e"><a href="/projects">Projects</a></div>
-            <div style="grid-area: f"><a href="/contact">Contact me</a></div>
-            <div style="grid-area: g"><a href="/network">My Network</a></div>
+            <div style="grid-area: e"><a href="https://lecture-notes.nathcat.net">Lecture Notes</a></div>
+            <div style="grid-area: f"><a href="/projects">Projects</a></div>
+            <div style="grid-area: g"><a href="/contact">Contact me</a></div>
+            <div style="grid-area: h"><a href="/network">My Network</a></div>
         </div>
     </div>
 </div>

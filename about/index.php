@@ -116,6 +116,10 @@
                             so far as part of this course are:
                         </p>
 
+                        <p>
+                            You can find a collection of the work I completed at University <a href="https://lecture-notes.nathcat.net/">here</a>.
+                        </p>
+
                         <ul>
                             <li>Further Programming</li>
                             <li>Mathematical Concepts</li>

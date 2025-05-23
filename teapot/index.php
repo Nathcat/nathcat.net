@@ -16,7 +16,7 @@
             <?php include("../header.php"); ?>
 
             <div class="main align-center">
-                <?php if (array_key_exists("finished", $_GET) : ?>
+                <?php if (array_key_exists("finished", $_GET)) : ?>
                 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3YLW1U4MLKNWQdFAl41sPI?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                 <script>
                   setTimeout(() => { window.location = "/teapot?finished"}, 70000);

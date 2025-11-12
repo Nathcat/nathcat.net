@@ -16,23 +16,23 @@ if (array_key_exists("text", $_GET)) {
     $context = stream_context_create($options);
     $result = file_get_contents("https://ottsy.weilbyte.dev/api/generation", false, $context);
     if ($result === false) {
-        headers("Content-Type: text/plain");
+        header("Content-Type: text/plain");
         echo "Failed to get text from API";
     }
     else {
         $result = json_decode($result);
         if ($result["success"] === false) {
-            headers("Content-Type: text/plain");
+            header("Content-Type: text/plain");
             echo "Failed to get text from API: " . $result["error"];
         }
         else {
-            headers("Content-Type: audio/mpeg");
+            header("Content-Type: audio/mpeg");
             echo base64_decode($result["data"]);
         }
     }
 }
 else {
-    headers("Content-Type: text/plain");
+    header("Content-Type: text/plain");
     echo "Must specify text parameter.";
 }
 ?>

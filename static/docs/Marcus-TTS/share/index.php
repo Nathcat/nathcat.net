@@ -24,7 +24,7 @@ if (array_key_exists("text", $_GET)) {
         echo "Failed to get text from API";
     }
     else {
-        $result = json_decode($result);
+        $result = json_decode($result, true);
         if ($result["success"] === false) {
             header("Content-Type: text/plain");
             echo "Failed to get text from API: " . $result["error"];

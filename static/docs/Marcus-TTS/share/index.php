@@ -16,6 +16,7 @@ if (array_key_exists("text", $_GET)) {
 
     curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
     curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
+    curl_setopt($curl, CURLOPT_USERAGENT, "cURL/PHP");
     $result = curl_exec($curl);
     curl_close($curl);
 

@@ -7,9 +7,9 @@ if (array_key_exists("text", $_GET)) {
 
     $options = [
         "http" => [
-            "header" => "Content-Type: application/json\r\n",
+            "header" => "Content-Type: application/json",
             "method" => "POST",
-            "content" => http_build_query($data)
+            "content" => json_encode($data)
        ]
     ];
 

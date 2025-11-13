@@ -6,7 +6,7 @@ if (!array_key_exists("v", $_GET)) {
 
 $v = intval($_GET["v"]);
 
-headers("Content-Type: text/plain");
+header("Content-Type: text/plain");
 
 if ($v < 5) {
     echo "New version available!";

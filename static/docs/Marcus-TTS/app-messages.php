@@ -12,7 +12,7 @@ if ($v < 2) {
     echo "New version available!";
 }
 else {
-    echo "N/A"
+    echo "N/A";
 }
 
 ?>

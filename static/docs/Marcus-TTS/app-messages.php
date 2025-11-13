@@ -8,8 +8,11 @@ $v = intval($_GET["v"]);
 
 header("Content-Type: text/plain");
 
-if ($v < 5) {
+if ($v < 2) {
     echo "New version available!";
+}
+else {
+    echo "N/A"
 }
 
 ?>

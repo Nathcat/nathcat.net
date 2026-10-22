@@ -71,6 +71,54 @@
   </p>
 </TextContent>
 
+<h2>Projects</h2>
+<TextContent>
+  <h3>The Nathcat Network</h3>
+  <p>
+    The Nathcat Network is the culmination of two years of work, and is
+    certainly my largest project yet.
+  </p>
+  <p>
+    The network manifests in a core collection of federatable application
+    services. which the rest of my applications can be built on top of. I have
+    attempted to embrace a federatable / standalone design for each service,
+    such that other developers can use their own instances, or just use my
+    instances!
+  </p>
+  <p>The core services include:</p>
+  <ul>
+    <li>
+      <b>AuthCat</b> - An OAuth2.0 (<a
+        href="https://www.rfc-editor.org/info/rfc6749/">RFC 6479</a
+      >) compliant authentication server.
+    </li>
+    <li>
+      <b>DataCat</b> - Basic application services API, allowing apps to create and
+      manage user groups, leaderboards, etc...
+    </li>
+  </ul>
+  <h3>NoteCat</h3>
+  <p>A web application for creating and editing LaTeX documents.</p>
+  <p>
+    You can use NoteCat <a href="https://note.nathcat.net">here</a>.
+  </p>
+  <h3>PeopleCat</h3>
+  <p>
+    PeopleCat is a messaging / social media platform based on the Nathcat
+    Network's services. I have been working on this project with my friend
+    Brooke.
+  </p>
+  <p>
+    This project has been a work in progress for many years. It was directly
+    inspired by my A-Level project <a href="/Nathan Baines - MessageCat.pdf"
+      >MessageCat</a
+    >, and as such its initial incarnations and prototypes pre-date the Nathcat
+    Network. Since I have been rebuilding most of the network with a more up to
+    date tech stack, I haven't had a chance to work on PeopleCat, but hopefully
+    I will revisit it soon!
+  </p>
+</TextContent>
+
 <style>
   .title {
     width: 100%;

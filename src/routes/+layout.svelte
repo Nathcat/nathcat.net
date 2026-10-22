@@ -1,12 +1,18 @@
 <script lang="ts">
-	import favicon from '#lib/assets/favicon.svg';
-	import type { LayoutProps } from './$types';
+  import Footer from "../Footer.svelte";
+  import Header from "../Header.svelte";
 
-	let { children }: LayoutProps = $props();
+  let { children } = $props();
 </script>
 
 <svelte:head>
-	<link rel="icon" href={favicon} />
+  <title>Nathan Baines</title>
 </svelte:head>
 
-{@render children()}
+<div class="content">
+  <Header></Header>
+  <div class="main align-center">
+    {@render children()}
+  </div>
+  <Footer></Footer>
+</div>

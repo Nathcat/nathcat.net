@@ -71,6 +71,27 @@
   </p>
 </TextContent>
 
+<h2>Languages &amp Frameworks</h2>
+
+<TextContent>
+  <ul>
+    <li>C++</li>
+    <li>Java</li>
+    <li>TypeScript &amp JavaScript</li>
+    <li>Python</li>
+    <li>Rust</li>
+    <li>Kotlin</li>
+    <li>PHP</li>
+  </ul>
+  <ul>
+    <li>Svelte</li>
+    <li>Apache</li>
+    <li>MySQL</li>
+    <li>PostgreSQL</li>
+    <li>Redis</li>
+  </ul>
+</TextContent>
+
 <h2>Projects</h2>
 <TextContent>
   <h3>The Nathcat Network</h3>
@@ -116,6 +137,31 @@
     Network. Since I have been rebuilding most of the network with a more up to
     date tech stack, I haven't had a chance to work on PeopleCat, but hopefully
     I will revisit it soon!
+  </p>
+</TextContent>
+
+<h2>Awards</h2>
+
+<TextContent>
+  <h3>
+    HackSussex GameJam - Overall Winner 2024 &amp 2025, Category winner 2023
+  </h3>
+  <p>
+    Me and my group of friends worked together to create a game in 24 hours,
+    competing against a large number of other teams of students from our
+    University, and other teams from outside. Judges comprised of multiple
+    faculty members from the Informatics department. We have been voted a
+    category winner in our first year, and the overall winners for two years
+    running.
+  </p>
+
+  <h3>President's Badge - Boys Brigade</h3>
+  <p>
+    I was a member of the <a href="https://boys-brigade.org.uk/"
+      >Boy's Brigade</a
+    > for 12 years. Towards the end of my time in the programme, I was awarded the
+    President's badge. This required the completion of a number of activities within
+    my company, and a leadership course.
   </p>
 </TextContent>
 

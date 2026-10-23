@@ -123,7 +123,6 @@
   .title {
     width: 100%;
     margin-bottom: 25px;
-    margin-left: 25px;
   }
   .title h1 {
     font-size: 5em;
@@ -132,7 +131,6 @@
 
   h2 {
     width: 100%;
-    margin-left: 25px;
   }
 
   .experience-title h3 {

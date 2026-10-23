@@ -12,7 +12,6 @@
     width: 100%;
     padding-left: 25px;
     box-sizing: border-box;
-    margin-left: 25px;
     padding-right: 10%;
   }
 </style>
